@@ -17,7 +17,7 @@
 ║    Slot 0 → Pin  3  → jrotate1  (base rotation)        — MG996R              ║
 ║    Slot 1 → Pin  5  → jlink1    (arm segment 1)        — MG996R              ║
 ║    Slot 2 → Pin  6  → jlink2    (arm segment 2)        — MG996R              ║
-║    Slot 3 → Pin  9  → jrotate2  (wrist rotation)       — MG90S (REMOVED TEMP)║
+║    Slot 3 → Pin  9  → jrotate2  (wrist rotation)       — MG90S               ║
 ║    Slot 4 → Pin 10  → jend      (wrist tilt)           — MG90S               ║
 ║    Slot 5 → Pin 11  → jsgear OR jhorn (end effector)   — SG90                ║
 ║                        Both share this pin — only one attached at a time     ║
@@ -59,14 +59,14 @@ Servo servos[NUM_JOINTS];
 // Which Arduino pin each servo slot is wired to.
 // The position in this array IS the slot number (array[0] = slot 0 = jrotate1)
 // All 6 pins are PWM-capable (required for servo control)
-//                    Slot :   0   1   2   4    5                                (3 is temporarily removed)
-int servo_pins[NUM_JOINTS] = { 3,  5,  6,  10,  11 };
+//                    Slot :   0   1   2   3   4    5                               
+int servo_pins[NUM_JOINTS] = { 3,  5,  6,  9,  10,  11 };
 
 // Starting angle for each servo at power-on (degrees, 0-180)
 // These match the zero_angle values in ros2_to_arduino_bridge.py's JOINT_MAP:
 //   jrotate1=90, jlink1=110, jlink2=110, jrotate2=90, jend=90, j6=90
-//                        Slot :    0   1    2    4   5                          (3 is temporarily removed)
-int default_angles[NUM_JOINTS] = {  90, 145, 110, 90, 90 };
+//                        Slot :    0   1    2    3   4   5                         
+int default_angles[NUM_JOINTS] = {  90, 145, 110, 90, 90, 90 };
 
 
 // ══════════════════════════════════════════════════════════════════════════════
