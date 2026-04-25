@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="roboassem">
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="-5.6544E-10 0.0032663 0.024781"
+        rpy="0 0 0" />
+      <mass
+        value="0.077397" />
+      <inertia
+        ixx="7.6666E-05"
+        ixy="1.5618E-13"
+        ixz="6.4688E-13"
+        iyy="6.7884E-05"
+        iyz="6.1994E-07"
+        izz="0.00012057" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rotate1">
+    <inertial>
+      <origin
+        xyz="7.8652E-10 0.017196 0.01967"
+        rpy="0 0 0" />
+      <mass
+        value="0.055642" />
+      <inertia
+        ixx="2.7614E-05"
+        ixy="6.4688E-13"
+        ixz="1.5618E-13"
+        iyy="2.3831E-05"
+        iyz="-6.5307E-07"
+        izz="3.5251E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/rotate1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/rotate1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jrotate1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.051"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="rotate1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+    <safety_controller
+      soft_upper_limit="1.5"
+      soft_lower_limit="-1.5"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="3.0531E-07 0.0024668 0.070335"
+        rpy="0 0 0" />
+      <mass
+        value="0.0493" />
+      <inertia
+        ixx="0.00015198"
+        ixy="6.142E-10"
+        ixz="3.4562E-10"
+        iyy="0.00015254"
+        iyz="5.5341E-10"
+        izz="1.7276E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.89412 0.89412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jlink1"
+    type="revolute">
+    <origin
+      xyz="0 -0.021019 0.039215"
+      rpy="0 0 0" />
+    <parent
+      link="rotate1" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.222"
+      upper="1.92"
+      effort="0"
+      velocity="0" />
+    <safety_controller
+      soft_upper_limit="1.85"
+      soft_lower_limit="-1.15"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.032867 0.020587 0.00045109"
+        rpy="0 0 0" />
+      <mass
+        value="0.067771" />
+      <inertia
+        ixx="1.4311E-05"
+        ixy="2.6105E-06"
+        ixz="1.6958E-07"
+        iyy="5.7937E-05"
+        iyz="-6.7336E-09"
+        izz="6.0741E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jlink2"
+    type="revolute">
+    <origin
+      xyz="0 0.025219 0.14033"
+      rpy="0 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.222"
+      upper="1.92"
+      effort="0"
+      velocity="0" />
+    <safety_controller
+      soft_upper_limit="1.85"
+      soft_lower_limit="-1.15"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="rotate2">
+    <inertial>
+      <origin
+        xyz="0.011055 -0.0037097 2.4286E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.016695" />
+      <inertia
+        ixx="2.3879E-06"
+        ixy="4.2263E-07"
+        ixz="-5.8312E-09"
+        iyy="2.2937E-06"
+        iyz="1.5232E-09"
+        izz="2.7413E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/rotate2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/rotate2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jrotate2"
+    type="revolute">
+    <origin
+      xyz="0.10788 0.01655 0"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="rotate2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+    <safety_controller
+      soft_upper_limit="1.5"
+      soft_lower_limit="-1.5"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="end">
+    <inertial>
+      <origin
+        xyz="0.020161 0.0045965 8.9879E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.021086" />
+      <inertia
+        ixx="4.5047E-06"
+        ixy="-4.5642E-07"
+        ixz="8.1657E-13"
+        iyy="4.5609E-06"
+        iyz="-1.909E-12"
+        izz="4.8659E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/end.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboassem/meshes/end.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jend"
+    type="revolute">
+    <origin
+      xyz="0.026025 -0.0278 0"
+      rpy="0 0 0" />
+    <parent
+      link="rotate2" />
+    <child
+      link="end" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+    <safety_controller
+      soft_upper_limit="1.5"
+      soft_lower_limit="-1.5"
+      k_velocity="0" />
+  </joint>
+</robot>

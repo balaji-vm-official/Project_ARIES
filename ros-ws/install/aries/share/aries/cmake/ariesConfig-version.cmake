@@ -1,0 +1,1 @@
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/ament_cmake_core/ariesConfig-version.cmake

@@ -1,0 +1,1 @@
+/home/comrade/Documents/Project_ARIES/ros-ws/src/moveit2/launch/warehouse_db.launch.py

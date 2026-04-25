@@ -1,0 +1,1 @@
+/home/comrade/Documents/Project_ARIES/ros-ws/src/moveit2/launch/moveit_rviz.launch.py

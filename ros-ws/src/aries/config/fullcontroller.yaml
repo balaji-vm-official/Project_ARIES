@@ -1,0 +1,31 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+arm_controller:
+  ros__parameters:
+    joints:
+      - jrotate1
+      - jlink1
+      - jlink2
+      - jrotate2
+      - jend
+      - jconnector
+      - jsgear
+      - jbutton1
+      - jmconnector
+      - jhorn
+      - jmbutton1
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+      - velocity

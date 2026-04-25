@@ -1,0 +1,61 @@
+[0.023s] Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/aries -- -j8 -l8
+[0.086s] Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/aries -- -j8 -l8
+[0.102s] Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/aries
+[0.117s] -- Install configuration: ""
+[0.117s] -- Execute custom install script
+[0.118s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/ard_connect/ard_connect.ino
+[0.118s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/ard_connect/ros2_to_arduino_bridge.py
+[0.118s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/ard_connect/run_sequence.py
+[0.119s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/config/ardcontroller.yaml
+[0.119s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/config/fullcontroller.yaml
+[0.119s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/config/holdcontroller.yaml
+[0.120s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/config/robocontroller.yaml
+[0.120s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/launch/full_rviz.launch.py
+[0.120s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/launch/holdassem_rviz.launch.py
+[0.120s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/launch/roboassem_rviz.launch.py
+[0.121s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/button1.STL
+[0.122s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/button2.STL
+[0.122s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/connector.STL
+[0.122s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/finger.STL
+[0.123s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/gear.STL
+[0.123s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/hbase.STL
+[0.123s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/horn.STL
+[0.123s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/link.STL
+[0.124s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/magnet.STL
+[0.124s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/mbutton1.STL
+[0.124s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/mbutton2.STL
+[0.124s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/mconnector.STL
+[0.124s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/rod.STL
+[0.125s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/sfinger.STL
+[0.125s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/sgear.STL
+[0.125s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/slink.STL
+[0.125s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/base.STL
+[0.125s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/end.STL
+[0.126s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/link1.STL
+[0.126s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/link2.STL
+[0.126s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/rotate1.STL
+[0.126s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/rotate2.STL
+[0.126s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/full.xacro
+[0.127s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/holdassem.csv
+[0.127s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/holdassem.urdf
+[0.127s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/roboassem.csv
+[0.127s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/roboassem.urdf
+[0.128s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/worlds/holdassem.rviz
+[0.128s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/worlds/roboassem.rviz
+[0.128s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/lib/aries/ros2_to_arduino_bridge.py
+[0.129s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/ament_index/resource_index/package_run_dependencies/aries
+[0.129s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/ament_index/resource_index/parent_prefix_path/aries
+[0.129s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/environment/ament_prefix_path.sh
+[0.130s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/environment/ament_prefix_path.dsv
+[0.130s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/environment/path.sh
+[0.131s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/environment/path.dsv
+[0.131s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/local_setup.bash
+[0.131s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/local_setup.sh
+[0.132s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/local_setup.zsh
+[0.132s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/local_setup.dsv
+[0.132s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.dsv
+[0.149s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/ament_index/resource_index/packages/aries
+[0.150s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/cmake/ariesConfig.cmake
+[0.150s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/cmake/ariesConfig-version.cmake
+[0.150s] -- Up-to-date symlink: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.xml
+[0.153s] Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/aries

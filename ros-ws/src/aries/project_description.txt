@@ -1,0 +1,122 @@
+A team of 3 including me are doing this project. 
+In this project we are making a connector that can change to multiple end effectors easily without any human intervention.
+
+This connector doesn't need any electricity to work but also allow the end effector to use the electricity with a seperate section allocated in it.
+This system includes 3 main components: host (in this case a robotic arm), end effector (in this case a gripper) and connector which connect both host and end effector.
+The connector is placed in a holder, it contains 3 parts: top - (which has a hole so that the host can connect to it), button - (two spring activated mechanism used to lock, connect and hold the connector to the host properly) and bottom - (usually the end effector is fiexed this part)
+
+I am making a robotic arm project using ROS2 Jazzy (installed from this website https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html).
+I am simulating this project using Gazebo Harmonic (previously called gazebo ignition, also known as gazebo sim, downloaded from https://gazebosim.org/docs/harmonic/ros_installation/ using sudo apt-get install ros-${ROS_DISTRO}-ros-gz command and definitely not the gazebo classic one) and Rviz2.
+
+I am going to control the robot directly using my laptop (instead of the Raspberry Pi to control) with the help of Arduino UNO.
+
+To avoid sourcing ros2 and it required components everytime in the terminal individually and not wanting to to also upload in the "~bashrc" file. i used the ".ros2.sh" file to source everytime when it neeeded
+
+The robotic arm's model is given as roboassem.urdf and the gripper's models (that also includes both connector and the end effector) is given as holdassem.urdf
+
+To simulate fully i used full.xacro to combine both the robotic arm (roboassem.urdf.xacro) and gripper (holdassem.urdf.xacro)
+
+Similarly i have seperate launch.py file to simulate in rviz and gazebo. so total of 6 launch.py file and 2 for each urdf.xacro file. and i also have cotroller.yaml for all 3 urdf.xacro file 
+
+my device configuration
+comrade@comrade-Acer-One-Z14-55N:~/Documents/ros-ws$ hostnamectl
+ Static hostname: comrade-Acer-One-Z14-55N
+       Icon name: computer-laptop
+         Chassis: laptop 💻
+Operating System: Linux Mint 22.3                 
+          Kernel: Linux 6.17.0-14-generic
+    Architecture: x86-64
+ Hardware Vendor: Acer
+  Hardware Model: Acer One Z14-55N
+Firmware Version: N14NPL_T140ANR200_Q_20251119
+   Firmware Date: Wed 2025-11-19
+    Firmware Age: 3month
+comrade@comrade-Acer-One-Z14-55N:~/Documents/ros-ws$ cat /etc/os-release
+NAME="Linux Mint"
+VERSION="22.3 (Zena)"
+ID=linuxmint
+ID_LIKE="ubuntu debian"
+PRETTY_NAME="Linux Mint 22.3"
+VERSION_ID="22.3"
+HOME_URL="https://www.linuxmint.com/"
+SUPPORT_URL="https://forums.linuxmint.com/"
+BUG_REPORT_URL="http://linuxmint-troubleshooting-guide.readthedocs.io/en/latest/"
+PRIVACY_POLICY_URL="https://www.linuxmint.com/"
+VERSION_CODENAME=zena
+UBUNTU_CODENAME=noble
+comrade@comrade-Acer-One-Z14-55N:~/Documents/ros-ws$ cat /etc/linuxmint/info
+RELEASE=22.3
+CODENAME=zena
+EDITION="Cinnamon"
+DESCRIPTION="Linux Mint 22.3 Zena"
+DESKTOP=Gnome
+TOOLKIT=GTK
+NEW_FEATURES_URL=https://www.linuxmint.com/rel_zena_whatsnew.php
+RELEASE_NOTES_URL=https://www.linuxmint.com/rel_zena.php
+USER_GUIDE_URL=https://www.linuxmint.com/documentation.php
+GRUB_TITLE=Linux Mint 22.3 Cinnamon
+comrade@comrade-Acer-One-Z14-55N:~$ inxi -Fxz
+System:
+  Kernel: 6.17.0-14-generic arch: x86_64 bits: 64 compiler: gcc v: 13.3.0
+  Desktop: Cinnamon v: 6.6.7 Distro: Linux Mint 22.3 Zena
+    base: Ubuntu 24.04 noble
+Machine:
+  Type: Laptop System: Acer product: Acer One Z14-55N v: N/A
+    serial: <superuser required>
+  Mobo: Acer model: Acer One Z14-55N v: N14NPL_T140ANR200_Q_20251119
+    serial: <superuser required> UEFI: American Megatrends LLC.
+    v: N14NPL_T140ANR200_Q_20251119 date: 11/19/2025
+Battery:
+  ID-1: BAT0 charge: 33.8 Wh (65.0%) condition: 52.0/52.0 Wh (100.0%)
+    volts: 11.8 min: N/A model: WB SR 1 WB Lion Battery status: discharging
+CPU:
+  Info: 8-core model: Intel Core i3-N305 bits: 64 type: MCP arch: Alder Lake
+    rev: 0 cache: L1: 768 KiB L2: 4 MiB L3: 6 MiB
+  Speed (MHz): avg: 1059 high: 1328 min/max: 800/3800 cores: 1: 1148 2: 800
+    3: 800 4: 1163 5: 800 6: 1160 7: 1328 8: 1280 bogomips: 28876
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+Graphics:
+  Device-1: Intel Alder Lake-N [UHD Graphics] driver: i915 v: kernel
+    arch: Gen-12.2 bus-ID: 00:02.0
+  Device-2: Sunplus Innovation USB Camera driver: uvcvideo type: USB
+    bus-ID: 3-7:3
+  Display: x11 server: X.Org v: 21.1.11 with: Xwayland v: 23.2.6 driver: X:
+    loaded: modesetting unloaded: fbdev,vesa dri: iris gpu: i915
+    resolution: 1366x768~60Hz
+  API: EGL v: 1.5 drivers: iris,swrast platforms:
+    active: gbm,x11,surfaceless,device inactive: wayland
+  API: OpenGL v: 4.6 compat-v: 4.5 vendor: intel mesa
+    v: 25.2.8-0ubuntu0.24.04.1 glx-v: 1.4 direct-render: yes renderer: Mesa
+    Intel Graphics (ADL-N)
+  API: Vulkan v: 1.3.275 drivers: N/A surfaces: xcb,xlib devices: 2
+Audio:
+  Device-1: Intel Alder Lake-N PCH High Definition Audio driver: snd_hda_intel
+    v: kernel bus-ID: 00:1f.3
+  API: ALSA v: k6.17.0-14-generic status: kernel-api
+  Server-1: PipeWire v: 1.0.5 status: active
+Network:
+  Device-1: Realtek RTL8821CE 802.11ac PCIe Wireless Network Adapter
+    driver: rtw88_8821ce v: kernel port: 3000 bus-ID: 01:00.0
+  IF: wlp1s0 state: up mac: <filter>
+Bluetooth:
+  Device-1: Realtek Bluetooth Radio driver: btusb v: 0.8 type: USB
+    bus-ID: 3-8:4
+  Report: hciconfig ID: hci0 rfk-id: 2 state: up address: <filter> bt-v: 4.2
+    lmp-v: 8
+Drives:
+  Local Storage: total: 238.47 GiB used: 98.01 GiB (41.1%)
+  ID-1: /dev/nvme0n1 vendor: BIWIN model: AP423 CE480TC8800-256G
+    size: 238.47 GiB temp: 40.9 C
+Partition:
+  ID-1: / size: 47.98 GiB used: 35.86 GiB (74.7%) fs: ext4 dev: /dev/nvme0n1p5
+  ID-2: /boot/efi size: 511 MiB used: 74.3 MiB (14.5%) fs: vfat
+    dev: /dev/nvme0n1p1
+Swap:
+  ID-1: swap-1 type: file size: 2 GiB used: 808 MiB (39.5%) file: /swapfile
+Sensors:
+  System Temperatures: cpu: 37.0 C mobo: N/A
+  Fan Speeds (rpm): N/A
+Info:
+  Memory: total: 8 GiB note: est. available: 7.5 GiB used: 5.65 GiB (75.4%)
+  Processes: 321 Uptime: 19h 21m Init: systemd target: graphical (5)
+  Packages: 3197 Compilers: gcc: 13.3.0 Shell: Bash v: 5.2.21 inxi: 3.3.34

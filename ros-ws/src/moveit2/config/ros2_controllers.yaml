@@ -1,0 +1,37 @@
+# config/ros2_controllers.yaml
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+arm_controller:
+  ros__parameters:
+    joints:
+      - jrotate1
+      - jlink1
+      - jlink2
+      - jrotate2
+      - jend
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    open_loop_control: true
+
+gripper_controller:
+  ros__parameters:
+    joints:
+      - jhorn
+      - jsgear
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position

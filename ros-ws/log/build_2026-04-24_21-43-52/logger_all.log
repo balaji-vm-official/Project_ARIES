@@ -1,0 +1,149 @@
+[0.187s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.187s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x777a29c784a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x777a29c9cc20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x777a29c9cc20>>, mixin_verb=('build',))
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.246s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/comrade/Documents/Project_ARIES/ros-ws'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/aries) by extension 'ros'
+[0.293s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aries' with type 'ros.ament_cmake' and name 'aries'
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.321s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.321s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries_testing' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.321s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.321s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.321s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries_testing' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.322s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.323s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/comrade/Documents/Project_ARIES/ros-ws/install
+[0.326s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 425 installed packages in /opt/ros/jazzy
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'cmake_target' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'cmake_clean_cache' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'cmake_clean_first' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'cmake_force_configure' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'ament_cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'catkin_cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'aries' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.437s] DEBUG:colcon.colcon_core.verb:Building package 'aries' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries', 'merge_install': False, 'path': '/home/comrade/Documents/Project_ARIES/ros-ws/src/aries', 'symlink_install': True, 'test_result_base': None}
+[0.438s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.439s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.439s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/comrade/Documents/Project_ARIES/ros-ws/src/aries' with build type 'ament_cmake'
+[0.439s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/comrade/Documents/Project_ARIES/ros-ws/src/aries'
+[0.442s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.442s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/comrade/Documents/Project_ARIES/ros-ws/src/aries -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries
+[5.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/comrade/Documents/Project_ARIES/ros-ws/src/aries -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries
+[5.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/aries -- -j8 -l8
+[5.193s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/aries -- -j8 -l8
+[5.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/aries
+[6.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aries)
+[6.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/aries
+[6.209s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries' for CMake module files
+[6.211s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries' for CMake config files
+[6.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('aries', 'cmake_prefix_path')
+[6.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/hook/cmake_prefix_path.ps1'
+[6.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/hook/cmake_prefix_path.dsv'
+[6.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/hook/cmake_prefix_path.sh'
+[6.217s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/lib'
+[6.218s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/bin'
+[6.218s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/lib/pkgconfig/aries.pc'
+[6.218s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/lib/python3.12/site-packages'
+[6.219s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/bin'
+[6.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.ps1'
+[6.223s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.dsv'
+[6.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.sh'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.bash'
+[6.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.zsh'
+[6.227s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/colcon-core/packages/aries)
+[6.229s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aries)
+[6.229s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries' for CMake module files
+[6.230s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries' for CMake config files
+[6.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('aries', 'cmake_prefix_path')
+[6.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/hook/cmake_prefix_path.ps1'
+[6.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/hook/cmake_prefix_path.dsv'
+[6.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/hook/cmake_prefix_path.sh'
+[6.235s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/lib'
+[6.235s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/bin'
+[6.235s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/lib/pkgconfig/aries.pc'
+[6.235s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/lib/python3.12/site-packages'
+[6.236s] Level 1:colcon.colcon_core.environment:checking '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/bin'
+[6.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.ps1'
+[6.238s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.dsv'
+[6.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.sh'
+[6.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.bash'
+[6.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.zsh'
+[6.242s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/colcon-core/packages/aries)
+[6.243s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.243s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.244s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.244s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.256s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.257s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.257s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.263s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.264s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/comrade/Documents/Project_ARIES/ros-ws/install/local_setup.ps1'
+[6.266s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/comrade/Documents/Project_ARIES/ros-ws/install/_local_setup_util_ps1.py'
+[6.269s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/comrade/Documents/Project_ARIES/ros-ws/install/setup.ps1'
+[6.272s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/comrade/Documents/Project_ARIES/ros-ws/install/local_setup.sh'
+[6.273s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/comrade/Documents/Project_ARIES/ros-ws/install/_local_setup_util_sh.py'
+[6.274s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/comrade/Documents/Project_ARIES/ros-ws/install/setup.sh'
+[6.277s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/comrade/Documents/Project_ARIES/ros-ws/install/local_setup.bash'
+[6.278s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/comrade/Documents/Project_ARIES/ros-ws/install/setup.bash'
+[6.280s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/comrade/Documents/Project_ARIES/ros-ws/install/local_setup.zsh'
+[6.281s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/comrade/Documents/Project_ARIES/ros-ws/install/setup.zsh'

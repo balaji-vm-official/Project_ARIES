@@ -1,0 +1,1 @@
+/home/comrade/Documents/Project_ARIES/ros-ws/src/aries/launch/holdassem_rviz.launch.py

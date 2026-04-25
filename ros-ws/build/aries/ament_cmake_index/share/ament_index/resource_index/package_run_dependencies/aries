@@ -1,0 +1,1 @@
+rclpy;rclcpp;xacro;controller_manager;gripper_controllers;gz_msgs_vendor;gz_ros2_control;python3-numpy;ros_gz;ros_gz_bridge;ros_gz_sim;ros2_control;ros2_controllers;trajectory_msgs;demo_nodes_cpp;demo_nodes_py;gz_ros2_control_demos;ament_lint_auto;ament_lint_common

@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: aries
+    relative_path: urdf/full.xacro
+  srdf:
+    relative_path: config/full.srdf
+  package_settings:
+    author_name: Balaji VM
+    author_email: balaji.vm.official@gmail.com
+    generated_timestamp: 1777049862
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

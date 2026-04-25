@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="holdassem">
+  <link
+    name="hbase">
+    <inertial>
+      <origin
+        xyz="-0.0080385 0.021105 0.086708"
+        rpy="0 0 0" />
+      <mass
+        value="0.21146" />
+      <inertia
+        ixx="0.0001836"
+        ixy="1.1259E-06"
+        ixz="4.5959E-06"
+        iyy="0.00016487"
+        iyz="-4.0686E-06"
+        izz="0.00016525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/hbase.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.89412 0.89412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/hbase.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="connector">
+    <inertial>
+      <origin
+        xyz="0.00275 -0.00097993 -0.022656"
+        rpy="0 0 0" />
+      <mass
+        value="0.044045" />
+      <inertia
+        ixx="1.1484E-05"
+        ixy="2.3397E-07"
+        ixz="6.6588E-07"
+        iyy="1.0882E-05"
+        iyz="-1.188E-06"
+        izz="1.1654E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/connector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/connector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jconnector"
+    type="prismatic">
+    <origin
+      xyz="0.020445 0.069272 0.115"
+      rpy="0 0 0" />
+    <parent
+      link="hbase" />
+    <child
+      link="connector" />
+    <axis
+      xyz="0.17365 -0.98481 0" />
+    <limit
+      lower="0"
+      upper="0.04"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sgear">
+    <inertial>
+      <origin
+        xyz="-0.00090699 0.0018177 -0.0067816"
+        rpy="0 0 0" />
+      <mass
+        value="0.0055987" />
+      <inertia
+        ixx="6.5667E-07"
+        ixy="-1.7917E-08"
+        ixz="-3.3845E-09"
+        iyy="7.5417E-07"
+        iyz="1.0732E-08"
+        izz="1.3426E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/sgear.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/sgear.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jsgear"
+    type="revolute">
+    <origin
+      xyz="0.018779 -0.014646 -0.0365"
+      rpy="0 0 0" />
+    <parent
+      link="connector" />
+    <child
+      link="sgear" />
+    <axis
+      xyz="0.17365 -0.98481 0" />
+    <limit
+      lower="-0.8"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sfinger">
+    <inertial>
+      <origin
+        xyz="-0.0061362 -0.001082 -0.019217"
+        rpy="0 0 0" />
+      <mass
+        value="0.0049563" />
+      <inertia
+        ixx="9.4935E-07"
+        ixy="-1.1677E-08"
+        ixz="-2.1279E-07"
+        iyy="1.0135E-06"
+        iyz="-3.752E-08"
+        izz="1.2796E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/sfinger.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/sfinger.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jsfinger"
+    type="revolute">
+    <origin
+      xyz="-0.0026832 0.0094781 -0.030734"
+      rpy="0 0 0" />
+    <parent
+      link="sgear" />
+    <child
+      link="sfinger" />
+    <axis
+      xyz="0.17365 -0.98481 0" />
+    <limit
+      lower="0"
+      upper="0.8"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="jsgear"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="slink">
+    <inertial>
+      <origin
+        xyz="-0.0014048 0.0058969 -0.016516"
+        rpy="0 0 0" />
+      <mass
+        value="0.002206" />
+      <inertia
+        ixx="2.7018E-07"
+        ixy="8.5815E-11"
+        ixz="-5.4876E-09"
+        iyy="2.6971E-07"
+        iyz="-9.6761E-10"
+        izz="1.427E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/slink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/slink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jslink"
+    type="revolute">
+    <origin
+      xyz="0.0093974 -0.012696 -0.0565"
+      rpy="0 0 0" />
+    <parent
+      link="connector" />
+    <child
+      link="slink" />
+    <axis
+      xyz="0.17365 -0.98481 0" />
+    <limit
+      lower="-0.8"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="jsgear"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="gear">
+    <inertial>
+      <origin
+        xyz="0.0003177 0.00011857 -0.0062925"
+        rpy="0 0 0" />
+      <mass
+        value="0.0052567" />
+      <inertia
+        ixx="7.2033E-07"
+        ixy="-2.563E-08"
+        ixz="-3.8505E-08"
+        iyy="8.6117E-07"
+        iyz="-6.7894E-09"
+        izz="1.8982E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/gear.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/gear.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gear"
+    type="revolute">
+    <origin
+      xyz="-0.0081555 -0.016806 -0.0365"
+      rpy="0 0 0" />
+    <parent
+      link="connector" />
+    <child
+      link="gear" />
+    <axis
+      xyz="-0.17365 0.98481 0" />
+    <limit
+      lower="-0.8"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="jsgear"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="finger">
+    <inertial>
+      <origin
+        xyz="0.0061173 0.0010787 -0.019223"
+        rpy="0 0 0" />
+      <mass
+        value="0.0049563" />
+      <inertia
+        ixx="9.4977E-07"
+        ixy="-1.1603E-08"
+        ixz="2.1198E-07"
+        iyy="1.0135E-06"
+        iyz="3.7378E-08"
+        izz="1.2753E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/finger.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/finger.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jfinger"
+    type="revolute">
+    <origin
+      xyz="-0.0024724 0.0069259 -0.030725"
+      rpy="0 0 0" />
+    <parent
+      link="gear" />
+    <child
+      link="finger" />
+    <axis
+      xyz="-0.17365 0.98481 0" />
+    <limit
+      lower="0"
+      upper="0.8"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="gear"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="link">
+    <inertial>
+      <origin
+        xyz="-0.0014048 0.0058969 -0.016516"
+        rpy="0 0 0" />
+      <mass
+        value="0.002206" />
+      <inertia
+        ixx="2.7018E-07"
+        ixy="8.5815E-11"
+        ixz="-5.4876E-09"
+        iyy="2.6971E-07"
+        iyz="-9.6761E-10"
+        izz="1.427E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jlink"
+    type="revolute">
+    <origin
+      xyz="-0.00045071 -0.014432 -0.0565"
+      rpy="0 0 0" />
+    <parent
+      link="connector" />
+    <child
+      link="link" />
+    <axis
+      xyz="0.17365 -0.98481 0" />
+    <limit
+      lower="0"
+      upper="0.8"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="gear"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="button1">
+    <inertial>
+      <origin
+        xyz="-0.78409 -0.83398 -1.2914"
+        rpy="0 0 0" />
+      <mass
+        value="0.0018987" />
+      <inertia
+        ixx="1.633E-07"
+        ixy="1.3685E-08"
+        ixz="3.6803E-10"
+        iyy="8.8105E-08"
+        iyz="6.4894E-11"
+        izz="2.3438E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/button1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/button1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jbutton1"
+    type="prismatic">
+    <origin
+      xyz="0.79372 0.83568 1.284"
+      rpy="0 0 0" />
+    <parent
+      link="connector" />
+    <child
+      link="button1" />
+    <axis
+      xyz="0.98481 0.17365 0" />
+    <limit
+      lower="-0.004"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="button2">
+    <inertial>
+      <origin
+        xyz="-0.81402 -0.83738 -1.2914"
+        rpy="0 0 0" />
+      <mass
+        value="0.0018987" />
+      <inertia
+        ixx="1.633E-07"
+        ixy="1.3685E-08"
+        ixz="-3.6803E-10"
+        iyy="8.8105E-08"
+        iyz="-6.4894E-11"
+        izz="2.3438E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/button2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/button2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jbutton2"
+    type="prismatic">
+    <origin
+      xyz="0.80439 0.83568 1.284"
+      rpy="0 0 0" />
+    <parent
+      link="connector" />
+    <child
+      link="button2" />
+    <axis
+      xyz="0.98481 0.17365 0" />
+    <limit
+      lower="0"
+      upper="0.004"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="jbutton1"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="mconnector">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/mconnector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/mconnector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jmconnector"
+    type="prismatic">
+    <origin
+      xyz="-0.046918 0.070176 0.115"
+      rpy="0 0 0" />
+    <parent
+      link="hbase" />
+    <child
+      link="mconnector" />
+    <axis
+      xyz="-0.15239 -0.98832 0" />
+    <limit
+      lower="0"
+      upper="0.04"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="horn">
+    <inertial>
+      <origin
+        xyz="-0.0024811 0.001454 -0.0028938"
+        rpy="0 0 0" />
+      <mass
+        value="0.0017572" />
+      <inertia
+        ixx="3.3277E-08"
+        ixy="-3.9132E-11"
+        ixz="-2.2877E-08"
+        iyy="5.8263E-08"
+        iyz="-6.3455E-10"
+        izz="3.0303E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/horn.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/horn.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jhorn"
+    type="revolute">
+    <origin
+      xyz="0.013671 -0.016005 -0.0365"
+      rpy="0 0 0" />
+    <parent
+      link="mconnector" />
+    <child
+      link="horn" />
+    <axis
+      xyz="0.15239 0.98832 0" />
+    <limit
+      lower="-0.8"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rod">
+    <inertial>
+      <origin
+        xyz="-0.002235 -0.0011521 -0.027471"
+        rpy="0 0 0" />
+      <mass
+        value="4.7921E-05" />
+      <inertia
+        ixx="1.4402E-08"
+        ixy="-3.6172E-12"
+        ixz="-1.0813E-09"
+        iyy="1.4472E-08"
+        iyz="-2.539E-11"
+        izz="9.865E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/rod.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.89412 0.89412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/rod.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jrod"
+    type="revolute">
+    <origin
+      xyz="-0.0097633 0.0012314 -0.010608"
+      rpy="0 0 0" />
+    <parent
+      link="horn" />
+    <child
+      link="rod" />
+    <axis
+      xyz="0.15239 0.98832 0" />
+    <limit
+      lower="0"
+      upper="0.88"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="jhorn"
+      multiplier="-1.1"
+      offset="0" />
+  </joint>
+  <link
+    name="magnet">
+    <inertial>
+      <origin
+        xyz="-2.299E-05 -0.00016933 -0.0038585"
+        rpy="0 0 0" />
+      <mass
+        value="0.00040354" />
+      <inertia
+        ixx="3.4288E-09"
+        ixy="3.1822E-13"
+        ixz="1.2207E-23"
+        iyy="3.4308E-09"
+        iyz="-1.9447E-24"
+        izz="4.9181E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/magnet.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/magnet.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jmagnet"
+    type="continuous">
+    <origin
+      xyz="-0.0044694 -0.0023041 -0.054933"
+      rpy="0 0 0" />
+    <parent
+      link="rod" />
+    <child
+      link="magnet" />
+    <axis
+      xyz="0.15239 0.98832 0" />
+    <limit
+      lower="-0.8"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="jhorn"
+      multiplier="0.1"
+      offset="0" />
+  </joint>
+  <link
+    name="mbutton1">
+    <inertial>
+      <origin
+        xyz="0.0047248 -0.00072852 0.00013509"
+        rpy="0 0 0" />
+      <mass
+        value="0.0018987" />
+      <inertia
+        ixx="1.6386E-07"
+        ixy="-1.2053E-08"
+        ixz="3.6935E-10"
+        iyy="8.755E-08"
+        iyz="-5.695E-11"
+        izz="2.3438E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/mbutton1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/mbutton1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jmbutton1"
+    type="prismatic">
+    <origin
+      xyz="0.0049416 -0.00076195 -0.0075"
+      rpy="0 0 0" />
+    <parent
+      link="mconnector" />
+    <child
+      link="mbutton1" />
+    <axis
+      xyz="0.98832 -0.15239 0" />
+    <limit
+      lower="-0.004"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="mbutton2">
+    <inertial>
+      <origin
+        xyz="-0.0047248 0.00072852 0.00013509"
+        rpy="0 0 0" />
+      <mass
+        value="0.0018987" />
+      <inertia
+        ixx="1.6386E-07"
+        ixy="-1.2053E-08"
+        ixz="-3.6935E-10"
+        iyy="8.755E-08"
+        iyz="5.695E-11"
+        izz="2.3438E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/mbutton2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://holdassem/meshes/mbutton2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jmbutton2"
+    type="prismatic">
+    <origin
+      xyz="-0.0049416 0.00076195 -0.0075"
+      rpy="0 0 0" />
+    <parent
+      link="mconnector" />
+    <child
+      link="mbutton2" />
+    <axis
+      xyz="0.98832 -0.15239 0" />
+    <limit
+      lower="0"
+      upper="0.004"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="jmbutton1"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+</robot>

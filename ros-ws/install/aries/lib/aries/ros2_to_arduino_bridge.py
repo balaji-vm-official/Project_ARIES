@@ -1,0 +1,1 @@
+/home/comrade/Documents/Project_ARIES/ros-ws/src/aries/ard_connect/ros2_to_arduino_bridge.py

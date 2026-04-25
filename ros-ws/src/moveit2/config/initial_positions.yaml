@@ -1,0 +1,10 @@
+# Default initial positions for full's ros2_control fake system
+
+initial_positions:
+  jend: 0
+  jhorn: 0
+  jlink1: 0
+  jlink2: 0
+  jrotate1: 0
+  jrotate2: 0
+  jsgear: 0

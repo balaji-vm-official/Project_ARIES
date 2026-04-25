@@ -1,0 +1,9 @@
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/uninstall.dir
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/aries_uninstall.dir
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/test.dir
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/edit_cache.dir
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/rebuild_cache.dir
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/list_install_components.dir
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/install.dir
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/install/local.dir
+/home/comrade/Documents/Project_ARIES/ros-ws/build/aries/CMakeFiles/install/strip.dir

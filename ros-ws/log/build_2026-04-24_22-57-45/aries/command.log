@@ -1,0 +1,4 @@
+Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/aries -- -j8 -l8
+Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/aries -- -j8 -l8
+Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/aries
+Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/aries

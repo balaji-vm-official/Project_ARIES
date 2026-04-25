@@ -1,0 +1,1 @@
+/home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2/ament_cmake_environment_hooks/local_setup.bash
