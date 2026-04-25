@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "aries",
+			"path": "aries"
+		},
+		{
+			"name": "moveit2",
+			"path": "moveit2"
+		}
+	],
+	"settings": {}
+}
