@@ -1,7 +1,5 @@
 # Project_ARIES
 
-A team of 3 students including me did this project.In this project we made a connector that can change to multiple end effectors easily without any human intervention.
-
 This connector doesn't need any electricity to dock but can allow the end effector to use the electricity with a seperate section allocated to it.
 
 This system includes 3 main components:
