@@ -11,10 +11,7 @@ The connector is placed in a holder and has 3 section: top - (which has a cut se
 The robotic arm is controlled directly either by a teach pendant or from any device that suppport ROS2 jazzy (in this case my laptop) with the help of Arduino UNO R3.
 
 > [!NOTE]
-> View explaination file given in each folder to know more or click the below link
-> [3D_CAD_Models.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/3D_CAD_Models.Explanation.md)
-> [Circuit_Diagram.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/Circuit_Diagram.Explanation.md)
-> [ros-ws.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/ros-ws/ros-ws.Explanation.md)
+> View explaination file given in each folder to know more or click the following [3D_CAD_Models.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/3D_CAD_Models.Explanation.md), [Circuit_Diagram.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/Circuit_Diagram.Explanation.md), [ros-ws.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/ros-ws/ros-ws.Explanation.md)
 
 ### Installation links:
 
