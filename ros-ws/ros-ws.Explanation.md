@@ -1,6 +1,6 @@
 First install ROS2 and MoveIt2 from the given link before starting.
 
-
+<n/>
 To avoid sourcing ros2 and it's required components everytime in the terminal individually and also not wanting to to also upload in the "~/.bashrc" file. 
 I used the "ros2.sh" file to source everytime when it needed.
 
