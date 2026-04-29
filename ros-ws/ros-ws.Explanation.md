@@ -1,8 +1,10 @@
 First install ROS2 and MoveIt2 from the given link before starting.
 
 
-To avoid sourcing ros2 and it's required components everytime in the terminal individually and also not wanting to to also upload in the "~/.bashrc" file. I used the "ros2.sh" file to source everytime when it needed.
-But before using the "ros2.sh" file make sure to change the location of the ros-ws folder as per the location that you saved.
+To avoid sourcing ros2 and it's required components everytime in the terminal individually and also not wanting to to also upload in the "~/.bashrc" file. 
+I used the "ros2.sh" file to source everytime when it needed.
+But before using the "ros2.sh" file make sure to change the location of the ros-ws folder as per the location that you saved. 
+This file is movable so, if you move this file to home you can source it directly without any hassle. 
 
 The robotic arm's model is given as "roboassem.urdf" and the gripper's models (that also includes both connector and the end effector) is given as "holdassem.urdf".
 
