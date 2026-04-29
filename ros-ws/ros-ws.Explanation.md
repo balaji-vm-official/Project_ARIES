@@ -1,5 +1,6 @@
 First install ROS2 and MoveIt2 from the given link before starting.
 
+
 To avoid sourcing ros2 and it's required components everytime in the terminal individually and also not wanting to to also upload in the "~/.bashrc" file. 
 I used the "ros2.sh" file to source everytime when it needed.
 
@@ -12,7 +13,7 @@ To simulate both model at same time, i used full.xacro to combine both the robot
 So to run each urdf file, i made seperate launch.py file to simulate in Rviz2. One launch.py file and one controller.yaml for each urdf.xacro file.
 
 <br/>
-To make the already existing file compatable with MoveIt2, put the following command in terminal after sourcing to get a setup file make this process simple.
+To make the already existing file compatable with MoveIt2, put the following command in terminal after sourcing to get a setup file make this process simple.<br/>
     
     "ros2 launch moveit_setup_assistant setup_assistant.launch.py" 
 
@@ -22,6 +23,7 @@ To launch the Moveit2 file run the following command in terminal after sourcing.
 
 <br/>
 To connect MoveIt2 and Arduino UNO R3, 
+
 <br/>
 
 - first upload "ard_connect.ino" in the ard-connect folder (ros-ws/src/aries/ard_connect).
