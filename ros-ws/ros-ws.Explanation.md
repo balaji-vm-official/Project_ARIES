@@ -18,10 +18,10 @@ To make the already existing file compatable with MoveIt2, put the following com
 To launch the Moveit2 file run the following command in terminal after sourcing.
     
     "ros2 launch panda_moveit_config demo.launch.py" 
-
+<br/>  <br/> 
 To connect MoveIt2 and Arduino UNO R3, <br/>  <br/> 
 
-- first upload "ard_connect.ino" in the ard-connect folder (ros-ws/src/aries/ard_connect).
+- First upload "ard_connect.ino" in the ard-connect folder (ros-ws/src/aries/ard_connect).
 - Next run "ros2_to_arduino_bridge.py" in seperate terminal after the demo.launch.py is launched.
 - Finally run "run_sequence.py" in seperate terminal if you want to want to run the robotic arm in pre planned sequence. This also work even when Arduino is not connected.<br/>  <br/> 
 
