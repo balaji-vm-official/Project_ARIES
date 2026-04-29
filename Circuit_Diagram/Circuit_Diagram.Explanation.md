@@ -2,11 +2,11 @@ This circuit is made using KiCAD a free open source software. This is a accurate
 
 Each servo motor is connected directly to a PWM suppported pin the Arduino UNO R3 that is given by,
 
-   1. rotate1  - 3
-   2. link1    - 5
-   3. link2    - 6
-   4. rotate2  - 9
-   5. end      - 10
-   6. gripper  - 11
+   - 03 - rotate1 
+   - 05 - link1
+   - 06 - link2
+   - 09 - rotate2
+   - 10 - end
+   - 11 - gripper
 
 The Arduino UNO and all servo motors are directly powered by a 5V adapter so that the motors can gets uninterrupted power supply.
