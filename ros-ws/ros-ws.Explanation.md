@@ -23,8 +23,9 @@ To launch the Moveit2 file run the following command in terminal after sourcing.
 
 <br/>
 To connect MoveIt2 and Arduino UNO R3, 
-- first upload "ard_connect.ino" in the ard-connect folder (ros-ws/src/aries/ard_connect).
-- Next run "ros2_to_arduino_bridge.py" in seperate terminal after the demo.launch.py is launched.
+
+- first upload "ard_connect.ino" in the ard-connect folder (ros-ws/src/aries/ard_connect).<br/>
+- Next run "ros2_to_arduino_bridge.py" in seperate terminal after the demo.launch.py is launched.<br/>
 - Finally run "run_sequence.py" in seperate terminal if you want to want to run the robotic arm in pre planned sequence. This also work even when Arduino is not connected.
 
 To learn more, visit the official documentations to get clear in-depth knowledge.
