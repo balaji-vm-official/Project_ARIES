@@ -3,9 +3,10 @@
 <package format="3">
   <name>aries</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="comrade@todo.todo">comrade</maintainer>
-  <license>Apache-2.0</license>
+  <description>Project ARIES main package</description>
+  <maintainer email="balaji.vm.official@todo.todo">Balaji VM</maintainer>
+
+  <license>TODO</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

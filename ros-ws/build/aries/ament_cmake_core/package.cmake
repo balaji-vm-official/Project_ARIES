@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "aries")
 set(aries_VERSION "0.0.0")
-set(aries_MAINTAINER "comrade <comrade@todo.todo>")
+set(aries_MAINTAINER "Balaji VM <balaji.vm.official@todo.todo>")
 set(aries_BUILD_DEPENDS "rclpy" "rclcpp" "xacro" "controller_manager" "gripper_controllers" "gz_msgs_vendor" "gz_ros2_control" "python3-numpy" "ros_gz" "ros_gz_bridge" "ros_gz_sim" "ros2_control" "ros2_controllers" "trajectory_msgs")
 set(aries_BUILDTOOL_DEPENDS "ament_cmake")
 set(aries_BUILD_EXPORT_DEPENDS "rclpy" "rclcpp" "xacro" "controller_manager" "gripper_controllers" "gz_msgs_vendor" "gz_ros2_control" "python3-numpy" "ros_gz" "ros_gz_bridge" "ros_gz_sim" "ros2_control" "ros2_controllers" "trajectory_msgs")

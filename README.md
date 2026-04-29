@@ -1,19 +1,28 @@
 # Project_ARIES
 
-A team of 3 students including me are doing this project.
+A team of 3 students including me did this project.
 
-In this project we are making a connector that can change to multiple end effectors easily without any human intervention.
-This connector doesn't need any electricity to work but also allow the end effector to use the electricity with a seperate section allocated to it.
-This system includes 3 main components: host (in this case a robotic arm), end effector (in this case a gripper) and connector which connect both host and end effector.
+In this project we made a connector that can change to multiple end effectors easily without any human intervention.
+This connector doesn't need any electricity to dock but can allow the end effector to use the electricity with a seperate section allocated to it.
+This system includes 3 main components: host (in this case a robotic arm), end effector (in this case a mechanical gripper and a magnetic gripper) and connector which connect both host and end effector.
 
-The connector is placed in a holder, it contains 3 parts: top - (which has a hole so that the host can connect to it), button - (two spring activated mechanism used to lock, connect and hold the connector to the host properly) and bottom - (usually the end effector is fiexed this part)
+The connector is placed in a holder and has 3 section: top - (which has a cut section so that the host can connect to it), button - (two spring activated mechanism used to lock, connect and hold the connector to the host properly) and bottom - (usually an end effector is fixed to this part)
 
-I am making a robotic arm project using ROS2 Jazzy (installed from this website https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html).
+The robotic arm is controlled directly either by a teach pendant or from any device that suppport ROS2 jazzy (in this case my laptop) with the help of Arduino UNO R3.
 
-I am going to control the robot directly using my laptop (instead of the Raspberry Pi to control) with the help of Arduino UNO.
+> [!NOTE]
+> View Explaination.txt file in each main folder to know more.
 
-To avoid sourcing ros2 and it required components everytime in the terminal individually and not wanting to to also upload in the "~bashrc" file. i used the ".ros2.sh" file to source everytime when it neeeded
+## Installation links:
 
-The robotic arm's model is given as "roboassem.urdf" and the gripper's models (that also includes both connector and the end effector) is given as "holdassem.urdf".
-To simulate both model at same time, i used full.xacro to combine both the robotic arm (roboassem.urdf.xacro) and gripper (holdassem.urdf.xacro).
-Similarly i have seperate launch.py file to simulate eac urdf files in rviz. So total of 3 launch.py file and one for each urdf.xacro file. and i also have cotroller.yaml for all 3 urdf.xacro file.
+- SW to URDF Exporter : https://wiki.ros.org/sw_urdf_exporter
+- ROS2 Jazzy          : https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
+- MoveIt              : https://moveit.ai/install-moveit2/binary/
+- Arduino IDE         : https://www.arduino.cc/en/software/
+- KiCAD               : https://www.kicad.org/download/
+
+## Other links:
+
+- GrabCAD               : https://grabcad.com/library
+- ROS Documentation     : https://wiki.ros.org/
+- MoveIt2 Documentation : https://moveit.picknik.ai/main/doc/examples/setup_assistant/setup_assistant_tutorial.html

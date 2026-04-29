@@ -58,6 +58,43 @@
                 <state_interface name="velocity"/>
             </joint>
 
+
+            <!-- ── PASSIVE JOINTS (spring-activated, state-only, no command interface) ──
+                 jconnector, jbutton1, jbutton2 = connector 1 mechanism (gripper)
+                 jmconnector, jmbutton1, jmbutton2 = connector 2 mechanism (magnet)
+                 These are NOT commanded — springs move them physically.
+                 We register state_interfaces so joint_state_broadcaster can publish
+                 their positions and MoveIt2 won't complain about unknown joint states. -->
+            <joint name="jconnector">
+                <state_interface name="position">
+                    <param name="initial_value">0</param>
+                </state_interface>
+            </joint>
+            <joint name="jbutton1">
+                <state_interface name="position">
+                    <param name="initial_value">0</param>
+                </state_interface>
+            </joint>
+            <joint name="jbutton2">
+                <state_interface name="position">
+                    <param name="initial_value">0</param>
+                </state_interface>
+            </joint>
+            <joint name="jmconnector">
+                <state_interface name="position">
+                    <param name="initial_value">0</param>
+                </state_interface>
+            </joint>
+            <joint name="jmbutton1">
+                <state_interface name="position">
+                    <param name="initial_value">0</param>
+                </state_interface>
+            </joint>
+            <joint name="jmbutton2">
+                <state_interface name="position">
+                    <param name="initial_value">0</param>
+                </state_interface>
+            </joint>
         </ros2_control>
     </xacro:macro>
 </robot>

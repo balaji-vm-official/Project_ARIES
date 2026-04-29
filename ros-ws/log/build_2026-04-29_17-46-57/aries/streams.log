@@ -1,0 +1,99 @@
+[0.020s] Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/comrade/Documents/Project_ARIES/ros-ws/src/aries -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries
+[0.108s] -- The C compiler identification is GNU 13.3.0
+[0.199s] -- The CXX compiler identification is GNU 13.3.0
+[0.225s] -- Detecting C compiler ABI info
+[0.372s] -- Detecting C compiler ABI info - done
+[0.391s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.392s] -- Detecting C compile features
+[0.392s] -- Detecting C compile features - done
+[0.408s] -- Detecting CXX compiler ABI info
+[0.572s] -- Detecting CXX compiler ABI info - done
+[0.591s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.591s] -- Detecting CXX compile features
+[0.592s] -- Detecting CXX compile features - done
+[0.599s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.868s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.991s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.074s] -- Found rclpy: 7.1.11 (/opt/ros/jazzy/share/rclpy/cmake)
+[1.079s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[1.084s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.174s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.202s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.237s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.273s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.441s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.448s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.508s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.655s] -- Found controller_manager: 4.44.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[2.198s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[2.745s] -- Found gripper_controllers: 4.39.0 (/opt/ros/jazzy/share/gripper_controllers/cmake)
+[2.868s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[2.872s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.872s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.228s] -- Found ros2_control: 4.44.0 (/opt/ros/jazzy/share/ros2_control/cmake)
+[3.233s] -- Found ros2_controllers: 4.39.0 (/opt/ros/jazzy/share/ros2_controllers/cmake)
+[3.415s] -- Configuring done (3.4s)
+[3.427s] -- Generating done (0.0s)
+[3.435s] -- Build files have been written to: /home/comrade/Documents/Project_ARIES/ros-ws/build/aries
+[3.457s] Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/comrade/Documents/Project_ARIES/ros-ws/src/aries -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries
+[3.459s] Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/aries -- -j8 -l8
+[3.533s] Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/aries -- -j8 -l8
+[3.553s] Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/aries
+[3.572s] -- Install configuration: ""
+[3.573s] -- Execute custom install script
+[3.575s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/ard_connect/ard_connect.ino
+[3.598s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/ard_connect/ros2_to_arduino_bridge.py
+[3.618s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/ard_connect/run_sequence.py
+[3.638s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/config/ardcontroller.yaml
+[3.658s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/config/fullcontroller.yaml
+[3.675s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/config/holdcontroller.yaml
+[3.694s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/config/robocontroller.yaml
+[3.715s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/launch/full_rviz.launch.py
+[3.738s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/launch/holdassem_rviz.launch.py
+[3.762s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/launch/roboassem_rviz.launch.py
+[3.785s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/button1.STL
+[3.805s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/button2.STL
+[3.830s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/connector.STL
+[3.853s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/finger.STL
+[3.875s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/gear.STL
+[3.907s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/hbase.STL
+[3.939s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/horn.STL
+[3.971s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/link.STL
+[4.002s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/magnet.STL
+[4.037s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/mbutton1.STL
+[4.063s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/mbutton2.STL
+[4.090s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/mconnector.STL
+[4.118s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/rod.STL
+[4.144s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/sfinger.STL
+[4.168s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/sgear.STL
+[4.192s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/holdassem/slink.STL
+[4.217s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/base.STL
+[4.244s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/end.STL
+[4.269s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/link1.STL
+[4.301s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/link2.STL
+[4.326s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/rotate1.STL
+[4.356s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/meshes/roboassem/rotate2.STL
+[4.384s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/full.xacro
+[4.408s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/holdassem.csv
+[4.436s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/holdassem.urdf
+[4.465s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/roboassem.csv
+[4.494s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/urdf/roboassem.urdf
+[4.522s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/worlds/holdassem.rviz
+[4.546s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/worlds/roboassem.rviz
+[4.564s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/lib/aries/ros2_to_arduino_bridge.py
+[4.583s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/ament_index/resource_index/package_run_dependencies/aries
+[4.606s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/ament_index/resource_index/parent_prefix_path/aries
+[4.625s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/environment/ament_prefix_path.sh
+[4.645s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/environment/ament_prefix_path.dsv
+[4.663s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/environment/path.sh
+[4.681s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/environment/path.dsv
+[4.703s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/local_setup.bash
+[4.723s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/local_setup.sh
+[4.748s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/local_setup.zsh
+[4.769s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/local_setup.dsv
+[4.793s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.dsv
+[4.817s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/ament_index/resource_index/packages/aries
+[4.842s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/cmake/ariesConfig.cmake
+[4.862s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/cmake/ariesConfig-version.cmake
+[4.881s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/aries/share/aries/package.xml
+[4.901s] Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/aries' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/aries

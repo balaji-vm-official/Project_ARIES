@@ -275,4 +275,6 @@
     <disable_collisions link1="sfinger" link2="sgear" reason="Adjacent"/>
     <disable_collisions link1="sfinger" link2="slink" reason="Default"/>
     <disable_collisions link1="sgear" link2="slink" reason="Always"/>
+    <disable_collisions link1="end" link2="mbutton1" reason="User"/>
+    <disable_collisions link1="end" link2="mbutton2" reason="User"/>
 </robot>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                           ros2_to_arduino_bridge.py                          ║
+║                           ros2_to_arduino_bridge.py                                  ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║  WHAT THIS FILE DOES:                                                        ║
 ║    This is the "translator" between ROS2/MoveIt2 and your Arduino UNO.       ║
@@ -89,6 +89,9 @@ JOINT_MAP = {
     # MG996R motor — lifts/lowers the second arm segment
     # same physical situation as jlink1
     'jlink2':    (  2,  110,  +1,   -1.222,  1.92  ),
+
+    # MG90S motor — wrist rotation (jrotate2 is back as a controllable revolute joint)
+    'jrotate2':  (  3,   90,  +1,   -1.2,    1.2   ),
 
     # MG90S motor — tilts the end (up/down at wrist)
     'jend':      (  4,   90,  +1,   -1.57,   1.57  ),
@@ -320,12 +323,11 @@ class ArduinoBridge(Node):
 
         # STEP 2: Check we have all 6 servo slots covered before sending.
         # jsgear and jhorn both cover index 5, so we check unique indices.
-        # Check that the 4 controllable arm joints are all present.
-        # jrotate2 is a fixed joint now (removed from URDF control) so we
-        # don't wait for it — slot 3 is filled with 90° in _send_positions.
-        REQUIRED_JOINTS = ['jrotate1', 'jlink1', 'jlink2', 'jend']
-        if not all(j in positions for j in REQUIRED_JOINTS):
-            return  # Still waiting for arm joints — hold off
+        # Wait until all 6 serial index slots have data before sending.
+        # This ensures we never send a partial message to the Arduino.
+        indices_covered = {JOINT_MAP[j][0] for j in positions}
+        if len(indices_covered) < NUM_JOINTS:
+            return  # Still waiting for all joints — hold off
 
         # STEP 3: Dead-zone filter — only send if something changed enough
         # Without this check, we'd send 100 identical messages per second
@@ -369,8 +371,7 @@ class ArduinoBridge(Node):
         angles = [90] * NUM_JOINTS  # 90° = center for most servos
         angles[1] = 110             # jlink1 default (calibrated to 110°)
         angles[2] = 110             # jlink2 default (calibrated to 110°)
-        angles[3] = 90              # jrotate2: fixed joint in URDF — servo stays at 90° always
-                                    # Arduino still expects 6 values, so we fill this slot
+
 
         # Now overwrite defaults with actual commanded positions
         for joint_name, pos in positions.items():
@@ -464,7 +465,7 @@ class ArduinoBridge(Node):
 
             # Only use one joint per serial index to avoid duplicates
             # (jsgear and jhorn both map to index 5 — we report as jsgear)
-            unique_joints = ['jrotate1', 'jlink1', 'jlink2', 'jend', 'jsgear']  # jrotate2 removed (fixed joint)
+            unique_joints = ['jrotate1', 'jlink1', 'jlink2', 'jrotate2', 'jend', 'jsgear']
             msg.name = unique_joints
             msg.position = []
 

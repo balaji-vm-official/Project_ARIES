@@ -1,0 +1,61 @@
+[0.016s] Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2': AMENT_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /home/comrade/Documents/Project_ARIES/ros-ws/src/moveit2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2
+[0.119s] -- The C compiler identification is GNU 13.3.0
+[0.227s] -- The CXX compiler identification is GNU 13.3.0
+[0.251s] -- Detecting C compiler ABI info
+[0.393s] -- Detecting C compiler ABI info - done
+[0.412s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.412s] -- Detecting C compile features
+[0.413s] -- Detecting C compile features - done
+[0.428s] -- Detecting CXX compiler ABI info
+[0.628s] -- Detecting CXX compiler ABI info - done
+[0.658s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.658s] -- Detecting CXX compile features
+[0.660s] -- Detecting CXX compile features - done
+[0.670s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.070s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.266s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.581s] -- Configuring done (1.5s)
+[1.587s] -- Generating done (0.0s)
+[1.590s] -- Build files have been written to: /home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2
+[1.598s] Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2' returned '0': AMENT_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /home/comrade/Documents/Project_ARIES/ros-ws/src/moveit2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2
+[1.600s] Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2': AMENT_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2 -- -j8 -l8
+[1.683s] Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2' returned '0': AMENT_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2 -- -j8 -l8
+[1.686s] Invoking command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2': AMENT_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2
+[1.706s] -- Install configuration: ""
+[1.707s] -- Execute custom install script
+[1.708s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/ament_index/resource_index/package_run_dependencies/moveit2
+[1.729s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/ament_index/resource_index/parent_prefix_path/moveit2
+[1.750s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/environment/ament_prefix_path.sh
+[1.769s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/environment/ament_prefix_path.dsv
+[1.790s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/environment/path.sh
+[1.810s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/environment/path.dsv
+[1.829s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/local_setup.bash
+[1.846s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/local_setup.sh
+[1.861s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/local_setup.zsh
+[1.876s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/local_setup.dsv
+[1.892s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/package.dsv
+[1.908s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/ament_index/resource_index/packages/moveit2
+[1.922s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/cmake/moveit2Config.cmake
+[1.937s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/cmake/moveit2Config-version.cmake
+[1.952s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/package.xml
+[1.968s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/launch/demo.launch.py
+[1.982s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/launch/move_group.launch.py
+[1.998s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/launch/moveit_rviz.launch.py
+[2.013s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/launch/rsp.launch.py
+[2.027s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/launch/setup_assistant.launch.py
+[2.042s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/launch/spawn_controllers.launch.py
+[2.056s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/launch/static_virtual_joint_tfs.launch.py
+[2.071s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/launch/warehouse_db.launch.py
+[2.087s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/full.ros2_control.xacro
+[2.103s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/full.srdf
+[2.121s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/full.urdf.xacro
+[2.138s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/initial_positions.yaml
+[2.159s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/joint_limits.yaml
+[2.183s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/kinematics.yaml
+[2.203s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/moveit.rviz
+[2.223s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/moveit_controllers.yaml
+[2.242s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/pilz_cartesian_limits.yaml
+[2.260s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/ros2_controllers.yaml
+[2.279s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/config/sensors_3d.yaml
+[2.296s] -- Symlinking: /home/comrade/Documents/Project_ARIES/ros-ws/install/moveit2/share/moveit2/.setup_assistant
+[2.316s] Invoked command in '/home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2' returned '0': AMENT_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/comrade/Documents/Project_ARIES/ros-ws/install/aries:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/comrade/Documents/Project_ARIES/ros-ws/build/moveit2
