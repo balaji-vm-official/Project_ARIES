@@ -3,11 +3,13 @@
 This connector doesn't need any electricity to dock but can allow the end effector to use the electricity with a seperate section allocated to it.
 
 This system includes 3 main components:
+
 - host (in this case a robotic arm)
 - end effector (in this case a mechanical gripper and a magnetic gripper)
 - connector which connect both host and end effector.
 
 The connector is placed in a holder and has 3 section:
+
 - top - (which has a cut section so that the host can connect to it),
 - button - (two spring activated mechanism used to lock, connect and hold the connector to the host properly)
 - bottom - (usually an end effector is fixed to this part)
