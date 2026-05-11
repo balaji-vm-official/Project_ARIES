@@ -1,8 +1,8 @@
 # Project ARIES: Automatic Robotic Interchangeable End Effector System
 
-**Project ARIES** is a smart, universal connector system designed to transform single-purpose robotic arms into versatile, multi-purpose industrial tools. By automating the end-effector switching process, ARIES eliminates manual intervention and reduces operational downtime.
+  **Project ARIES** is a smart, universal connector system designed to transform single-purpose robotic arms into versatile, multi-purpose industrial tools. By automating the end-effector switching process, ARIES eliminates manual intervention and reduces operational downtime.
 
-The system features a unique **Passive Docking Mechanism**: it requires no electricity to dock/undock, yet includes a dedicated power passthrough section to provide electricity to the end-effectors once connected.
+  The system features a unique **Passive Docking Mechanism**: it requires no electricity to dock/undock, yet includes a dedicated power passthrough section to provide electricity to the end-effectors once connected.
 
 ---
 
@@ -12,9 +12,9 @@ The system consists of three primary layers:
 
 1. **Host:** The robotic arm.
 2. **Connector:** The bridge between the host and tool, featuring three distinct sections:
-* **Top:** A specialized cut section for host engagement.
-* **Body:** Dual spring-activated mechanisms for secure locking and load-bearing.
-* **Bottom:** The interface where the specific end-effector is mounted.
+    * **Top:** A specialized cut section for host engagement.
+    * **Body:** Dual spring-activated mechanisms for secure locking and load-bearing.
+    * **Bottom:** The interface where the specific end-effector is mounted.
 
 
 3. **End-Effectors:** Currently supports a Mechanical Gripper and a Magnetic Gripper.
