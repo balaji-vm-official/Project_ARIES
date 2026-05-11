@@ -25,8 +25,11 @@ The robotic arm is controlled via **ROS2 Jazzy** and **MoveIt2** for path planni
 
 > [!NOTE]
 > For deep-dive technical details, please view the explanation files in each directory:
-> [3D_CAD_Models.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/3D_CAD_Models/3D_CAD_Models.Explanation.md), [Circuit_Diagram.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/Circuit_Diagram/Circuit_Diagram.Explanation.md), [ros-ws.Explanation](https://github.com/balaji-vm-official/Project_ARIES/blob/main/ros-ws/ros-ws.Explanation.md)
+> [3D CAD Models](https://github.com/balaji-vm-official/Project_ARIES/blob/main/3D_CAD_Models/3D_CAD_Models.Explanation.md) | [Circuit Diagram](https://github.com/balaji-vm-official/Project_ARIES/blob/main/Circuit_Diagram/Circuit_Diagram.Explanation.md) | [ROS Workspace](https://github.com/balaji-vm-official/Project_ARIES/blob/main/ros-ws/ros-ws.Explanation.md)
 
+---
+
+## 📄 Publication & Citation
 ---
 
 ## 📄 Publication & Citation
