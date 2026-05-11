@@ -30,9 +30,6 @@ The robotic arm is controlled via **ROS2 Jazzy** and **MoveIt2** for path planni
 ---
 
 ## 📄 Publication & Citation
----
-
-## 📄 Publication & Citation
 
 This project has been peer-reviewed and published in the *EPJ Web of Conferences*.
 
