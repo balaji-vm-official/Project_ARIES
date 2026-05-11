@@ -59,13 +59,10 @@ If you use this work or codebase in your research, please use the following cita
 
 ## 📸 Media Gallery
 
-|  Exploded  View  |
 ![Exploded view](Media/exploded_view.jpeg)
 
-|  Dissected View  |
 ![Disected view](Media/disected_side_view.jpeg)
 
-| Annotated System |
 ![Annoted image](Media/annoted_image.jpeg)
 
 ---
